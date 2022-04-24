@@ -1,0 +1,174 @@
+/* imported fonts */
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v19/4iCv6KVjbNBYlgoCxCvjsGyN.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Libre Bodoni';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/librebodoni/v1/_Xm--H45qDWDYULr5OfyZudXzSBgY2oMBGte6I1f8WvTcQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* body */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://media.istockphoto.com/photos/food-backgrounds-table-filled-with-large-variety-of-food-picture-id1155240408?k=20&m=1155240408&s=612x612&w=0&h=Zvr3TwVQ-wlfBnvGrgJCtv-_P_LUcIK301rCygnirbk=);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* header area */
+
+header {
+    position: relative;
+    text-align: center;
+    font-family: 'Libre Bodoni';
+}
+
+.title {
+    padding: 12px;
+}
+
+#header1 {
+    background-image: url('food.png');
+    background-size: 50%;
+    background-position-y: 5.7cm;
+    height: 100px;
+}
+
+.nav li {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: bottom;
+}
+
+li.location::after {
+    content: " > "
+}
+
+ul li.attribute+li.attribute::before {
+    content: " or ";
+}
+
+.nav .current {
+    color: #DB5563;
+}
+
+
+/* the 3 */
+
+.container {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.info-panel {
+    display: inline-block;
+    width: 32%;
+    min-height: 100px;
+    margin: 20px auto;
+    font-family: Libre Bodoni;
+    box-shadow: 2px 2px 4px 1px;
+}
+
+.panel-title {
+    padding: 8px;
+}
+
+.informational1 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    background-image: url(food.png);
+}
+
+.informational2 {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 5px;
+    background-image: url(food.png);
+}
+
+.informational3 {
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    background-image: url(food.png);
+}
+
+
+/* buttons */
+
+button {
+    position: relative;
+    border-radius: 200px;
+    background-color: #DB5563;
+    color: white;
+}
+
+button:hover {
+    background-color: #6D4EDB;
+    color: white;
+    box-shadow: 3px 3px 1px;
+}
+
+#button {
+    font-family: 'Libre Bodoni';
+    padding: 3px;
+    margin: 7px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #d6b72e;
+    width: 100%;
+    height: 70px;
+    font-family: Libre Bodoni;
+}
+
+.name {
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.fun-fact {
+    float: right;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 25px;
+    padding-right: 10px;
+}
